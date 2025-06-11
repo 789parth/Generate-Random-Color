@@ -6,6 +6,7 @@ btn.addEventListener("click", function () {
     h1.innerText = color;
     let div = document.querySelector("div");
     div.style.backgroundColor = color;
+    btn.style.borderColor = color;
 });
 
 function getRandomColor() {
