@@ -7,15 +7,17 @@
     <title>Generate Random Color</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-10">Generate Random Color</h1>
 </head>
 
-<body>
-    <button class="mt-14 p-3 rounded-lg text-lg sm:text-xl md:text-2xl lg:text-3xl">Generate
-        Color</button>
-    <div
-        class="h-96 w-[85%] border-2 border-black aspect-square rounded-sm mt-14 text-sm sm:text-lg md:text-xl lg:text-2xl">
-        This is Your New Color</div>
+<body class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-10 text-gray-800">Generate Random Color</h1>
+        <button class="mb-6 px-6 py-3 rounded-lg text-lg sm:text-xl md:text-2xl lg:text-3xl bg-white border-2 border-gray-800 hover:bg-gray-50 transition-colors">Generate Color</button>
+        <input type="text" id="colorValue" readonly class="mb-10 px-4 py-2 text-center text-lg sm:text-xl md:text-2xl lg:text-3xl bg-gray-100 border-2 border-gray-800 rounded-lg w-full max-w-md mx-auto" value="#000000">
+        <div id="colorDisplay" class="color-display h-64 sm:h-80 md:h-96 w-full max-w-md mx-auto border-2 border-gray-800 rounded-lg flex items-center justify-center text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold shadow-lg transition-all duration-500">
+            Color Preview
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 
